@@ -20,7 +20,7 @@ GRAPH
     xml (>= 0.0.0)
     yum-epel (>= 0.0.0)
   rbac (1.0.3)
-  site-statustypo3org (0.0.4)
+  site-statustypo3org (0.0.5)
     php (>= 0.0.0)
     ssl_certificates (>= 0.0.0)
   smf (2.2.7)
