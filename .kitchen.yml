@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: debian-7.8
+  - name: debian-8.2
+
+suites:
+  - name: default
+    run_list:
+      - recipe[site-statustypo3org::default]
+    attributes:
+      site-statustypo3org:
+        fqdn: status.typo3.vagrant
+        api:
+          username: test
+          password: test
