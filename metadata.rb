@@ -8,3 +8,4 @@ version "0.0.5"
 
 depends "ssl_certificates"
 depends "php"
+depends "apache2"
