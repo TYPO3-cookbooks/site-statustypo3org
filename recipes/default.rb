@@ -24,6 +24,7 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
+include_recipe "t3-base"
 
 Chef::Application.fatal!("You must supply node['site-statustypo3org']['api']['username']") if node['site-statustypo3org']['api']['username'] == nil
 Chef::Application.fatal!("You must supply node['site-statustypo3org']['api']['password']") if node['site-statustypo3org']['api']['password'] == nil
