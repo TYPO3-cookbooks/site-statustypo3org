@@ -10,4 +10,4 @@ depends "t3-base", "~> 0.2.0"
 
 depends "ssl_certificates"
 depends "php"
-depends "apache2"
+depends "apache2", "~> 4.0"
