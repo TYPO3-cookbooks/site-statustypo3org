@@ -15,7 +15,7 @@ transport:
 provisioner:
   name: dokken
 
-#platforms:
+platforms:
 #- name: debian-9
 #  driver:
 #    image: debian:9
