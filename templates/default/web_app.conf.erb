@@ -29,6 +29,11 @@ NameVirtualHost *:<%= @params[:server_port] %>
     Allow from 127.0.0.1
   </Location>
 
+  <LocationMatch "\.git/">
+    Order Deny,Allow
+    Deny from all
+  </LocationMatch>
+
   LogLevel info
   ErrorLog <%= node['apache']['log_dir'] %>/<%= @params['name'] %>-error.log
   CustomLog <%= node['apache']['log_dir'] %>/<%= @params['name'] %>-access.log combined
