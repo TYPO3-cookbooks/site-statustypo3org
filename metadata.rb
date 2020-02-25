@@ -9,5 +9,6 @@ version          IO.read(File.join(File.dirname(__FILE__), 'VERSION')) rescue '0
 depends "t3-base", "~> 0.2.0"
 
 depends "ssl_certificates"
-depends "php"
+depends "php", "~> 2.2"
 depends "apache2", "~> 4.0"
+depends "iptables", "~> 4.2"
