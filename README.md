@@ -1,5 +1,5 @@
 Description
 ===========
 
-Deploys [git.typo3.org/Sites/StatusTypo3Org.git](http://git.typo3.org/Sites/StatusTypo3Org.git) to show the Zabbix status.
+Deploys [gitlab.typo3.org/services/status.typo3.org.git](https://gitlab.typo3.org/services/status.typo3.org.git) to show the Zabbix status.
 
