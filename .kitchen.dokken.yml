@@ -20,8 +20,10 @@ platforms:
 - name: debian-7
   driver:
     image: dokken/debian-7
+    pid_one_command: /sbin/init
     intermediate_instructions:
-      - RUN /usr/bin/apt-get update
+      - RUN sed -i 's#http://deb.debian.org/debian#http://archive.debian.org/debian/#; s#http://security.debian.org/debian-security#http://archive.debian.org/debian-security/#; /wheezy-updates/d' /etc/apt/sources.list
+      - RUN /usr/bin/apt-get -o Acquire::Check-Valid-Until=false update
       - RUN /usr/bin/apt-get install apt-transport-https lsb-release procps net-tools cron -y
 
 # suites are taken from .kitchen.yml usually
